@@ -1,7 +1,7 @@
 import { StorageType, Direction } from './types'
 import { Chain, ChainType, SessionType } from './session-types'
 import { SignalProtocolAddress } from './signal-protocol-address'
-import { PreKeyWhisperMessage, WhisperMessage } from '@privacyresearch/libsignal-protocol-protobuf-ts'
+import { PreKeyWhisperMessage, WhisperMessage } from '@jafoor/libsignal-protocol-protobuf-ts'
 import * as base64 from 'base64-js'
 import * as util from './helpers'
 import * as Internal from './internal'

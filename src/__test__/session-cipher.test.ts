@@ -17,7 +17,7 @@ import {
     IncomingPushMessageSignal_Type,
     PushMessageContent_Flags,
     WhisperMessage,
-} from '@privacyresearch/libsignal-protocol-protobuf-ts'
+} from '@jafoor/libsignal-protocol-protobuf-ts'
 import { BaseKeyType } from '../session-types'
 
 const tv = TestVectors()

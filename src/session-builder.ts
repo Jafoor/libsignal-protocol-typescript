@@ -4,7 +4,7 @@ import { DeviceType, SessionType, BaseKeyType, ChainType } from './session-types
 import * as Internal from './internal'
 import * as base64 from 'base64-js'
 import { SessionRecord } from './session-record'
-import { PreKeyWhisperMessage } from '@privacyresearch/libsignal-protocol-protobuf-ts'
+import { PreKeyWhisperMessage } from '@jafoor/libsignal-protocol-protobuf-ts'
 import { SessionLock } from './session-lock'
 import { uint8ArrayToArrayBuffer } from './helpers'
 

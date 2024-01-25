@@ -65,13 +65,13 @@ The code samples below come almost directly from our [sample web application](ht
 We use [yarn](https://yarnpkg.com).
 
 ```
-yarn add @privacyresearch/libsignal-protocol-typescript
+yarn add @jafoor/libsignal-protocol-typescript
 ```
 
 But npm is good too:
 
 ```
-npm install @privacyresearch/libsignal-protocol-typescript
+npm install @jafoor/libsignal-protocol-typescript
 ```
 
 Now you can import classes and functions from the library. To make the examples below work, the following import suffices:
@@ -86,13 +86,13 @@ import {
     PreKeyType,
     SessionCipher,
     MessageType }
-from '@privacyresearch/libsignal-protocol-typescript'
+from '@jafoor/libsignal-protocol-typescript'
 ```
 
 If you prefer to use a prefix like `libsignal` and keep a short import, you can do the following:
 
 ```
-import * as libsignal from '@privacyresearch/libsignal-protocol-typescript'
+import * as libsignal from '@jafoor/libsignal-protocol-typescript'
 ```
 
 #### Install time

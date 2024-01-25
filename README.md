@@ -58,7 +58,7 @@ State is kept in the following places:
 
 ## Usage
 
-The code samples below come almost directly from our [sample web application](https://github.com/privacyresearchgroup/libsignal-typescript-demo). Please have a look there to see how everything fits together. Look at this project's unit tests too.
+The code samples below come almost directly from our [sample web application](https://github.com/jafoor/libsignal-typescript-demo). Please have a look there to see how everything fits together. Look at this project's unit tests too.
 
 ### Add the SDK to your project
 
@@ -198,7 +198,7 @@ const startSessionWithBoris = async () => {
 Relevant type definitions: [DeviceType](), [SignalProtocolAddress](), [MessageType](), [SessionBuilder](), [SessionCipher]()
 
 _Note:_ As discussed below, the Signal protocol uses two message types: `PreKeyWhisperMessage` and `WhisperMessage` that are defined
-in [the protobuf definitions]() and implemented in [libsignal-protocol-protobuf-ts](https://github.com/privacyresearchgroup/libsignal-protocol-protobuf-ts). The message created in the sample above is a `PreKeyWhisperMessage`. It carries information needed for the recipient to build a session with the [X3DH Protocol](https://signal.org/docs/specifications/x3dh/). After a session is established for a recipient, `SessionCipher.encrypt()` will return a simpler `WhisperMessage`.
+in [the protobuf definitions]() and implemented in [libsignal-protocol-protobuf-ts](https://github.com/jafoor/libsignal-protocol-protobuf-ts). The message created in the sample above is a `PreKeyWhisperMessage`. It carries information needed for the recipient to build a session with the [X3DH Protocol](https://signal.org/docs/specifications/x3dh/). After a session is established for a recipient, `SessionCipher.encrypt()` will return a simpler `WhisperMessage`.
 
 > **\*Into the weeds:** The function `sessionCipher.encrypt()` always returns a [`MessageType`]() object. Sometimes it is a `PreKeyWhisperMessage` and sometimes it is a `WhisperMessage`. To distinguish, check `ciphertext.type`. If `ciphertext.type === 3` then `ciphertext.body` contains a serialized `PreKeyWhisperMessage`. If `ciphertext.type === 1` then `ciphertext.body` contains a serialized `WhisperMessage`.\*
 

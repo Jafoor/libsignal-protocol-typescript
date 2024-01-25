@@ -1,6 +1,6 @@
 {
   "name": "@jafoor/libsignal-protocol-typescript",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": "https://github.com/privacyresearchgroup/libsignal-protocol-typescript",
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@privacyresearch/curve25519-typescript": "^0.0.12",
-    "@jafoor/libsignal-protocol-protobuf-ts": "^0.0.10",
+    "@jafoor/libsignal-protocol-protobuf-ts": "^0.0.11",
     "base64-js": "^1.5.1"
   },
   "files": [
